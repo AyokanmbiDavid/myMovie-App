@@ -1,0 +1,14 @@
+const options = {
+  method: 'GET',
+  headers: {
+    accept: 'application/json',
+    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3ZmI3YjEzZmJmZmRhMDUxYTQyMmVhMmI4ZTAwMDRlNSIsIm5iZiI6MTczNjI0MDU4Ni42OCwic3ViIjoiNjc3Y2VkY2FlYzUxNzkxZGZlNjZhYjlkIiwic2NvcGVzIjpbImFwaV9yZWFkIl0sInZlcnNpb24iOjF9.MzchRDLW4-gnT2--YCjwVSFE_XkJ8TDKi9_LusWbgrE'
+  }
+};
+
+fetch('https://api.themoviedb.org/3/configuration', options)
+  .then(res => res.json())
+  .then(res => console.log(res))
+  .catch(err => console.error(err));
+
+  eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3ZmI3YjEzZmJmZmRhMDUxYTQyMmVhMmI4ZTAwMDRlNSIsIm5iZiI6MTczNjI0MDU4Ni42OCwic3ViIjoiNjc3Y2VkY2FlYzUxNzkxZGZlNjZhYjlkIiwic2NvcGVzIjpbImFwaV9yZWFkIl0sInZlcnNpb24iOjF9.MzchRDLW4-gnT2--YCjwVSFE_XkJ8TDKi9_LusWbgrE
